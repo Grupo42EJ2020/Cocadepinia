@@ -10,7 +10,7 @@ using MVCLaboratorio.Models;
 
 namespace MVCLaboratorio.Controllers
 {
-    public class Empleado : Controller
+    public class EmpleadosController : Controller
     {
         RepositorioEmpleado repoEmpleado = new RepositorioEmpleado();
 
@@ -51,7 +51,7 @@ namespace MVCLaboratorio.Controllers
         public ActionResult EmpleadoEdit(int id, Empleado datosEmpleado)
         {
             datosEmpleado.IdEmpleado = id;
-            MCV repoEmpleado.actualizarEmpleado(datosEmpleado);
+            repoEmpleado.actualizarEmpleado(datosEmpleado);
 
             return RedirectToAction("Index");
         }

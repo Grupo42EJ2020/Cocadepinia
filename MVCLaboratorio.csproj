@@ -66,7 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\Empleado.cs" />
+    <Compile Include="Controllers\EmpleadosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -80,6 +80,12 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Views\Empleados\EmpleadoCreate.aspx" />
+    <Content Include="Views\Empleados\EmpleadoDelete.aspx" />
+    <Content Include="Views\Empleados\EmpleadoDetails.aspx" />
+    <Content Include="Views\Empleados\EmpleadoEdit.aspx" />
+    <Content Include="Views\Empleados\EmpleadosVer.aspx" />
+    <Content Include="Views\Empleados\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
