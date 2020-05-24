@@ -4,20 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Pia Desarrollo de Software</title>
+    <title>Empleados</title>
 </head>
 <body>
-    <center>
-    <h1>
-    Bienvenidos al pia PIA 👍
-    </h1>
-    <p>Menu</p>
+    <div>
+    <h1>TABLA EMPLEADOS</h1>
+    <a href="/Empleados/EmpleadosVer">Ver lista de los Empleados</a>
     <br />
-    <a href="/Empleados/Index">Empleados</a>
-    <br />
-<a href="/Cursos/Index">Datos de los Cursos</a>
-<br />
-<img src="../../Content/cocapinia.jpeg" />
-</center>
+    <a href="/Home/Index">Regresar a Menu</a>
+    </div>
 </body>
 </html>
