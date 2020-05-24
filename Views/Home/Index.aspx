@@ -7,9 +7,10 @@
     <title>Pia Desarrollo de Software</title>
 </head>
 <body>
-<
     <h1>
-    Bienvenidos al PIA 👍
+    Bienvenidos al pia PIA 👍
     </h1>
+
+<a href="/Cursos/Index">Datos de los Cursos</a>
 </body>
 </html>
