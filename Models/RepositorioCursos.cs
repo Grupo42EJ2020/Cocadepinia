@@ -34,7 +34,7 @@ namespace MVCLaboratorio.Models
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdCurso", IdCurso));
 
-            dtCursos = BaseHelper.ejecutarConsulta("sp_Empleado_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            dtCursos = BaseHelper.ejecutarConsulta("Sp_ConsultarTodo_CursoId", CommandType.StoredProcedure, parametros);
 
             Cursos datosCursos = new Cursos();
 
@@ -42,7 +42,7 @@ namespace MVCLaboratorio.Models
             {
                 datosCursos.IdCursos = int.Parse(dtCursos.Rows[0]["IdCurso"].ToString());
                 datosCursos.Descripcion = dtCursos.Rows[0]["Descripcion"].ToString();
-                datosCursos.IdEmpleado = int.Parse(dtCursos.Rows[0]["Direccion"].ToString());
+                datosCursos.IdEmpleado = int.Parse(dtCursos.Rows[0]["IdEmpleado"].ToString());
 
                 return datosCursos;
             }
@@ -67,7 +67,7 @@ namespace MVCLaboratorio.Models
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdCurso", IdCurso));
 
-            BaseHelper.ejecutarSentencia("sp_Empleado_Eliminar", CommandType.StoredProcedure, parametros);
+            BaseHelper.ejecutarSentencia("Sp_EliminarCurso", CommandType.StoredProcedure, parametros);
 
         }
 

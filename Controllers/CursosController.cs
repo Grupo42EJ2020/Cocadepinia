@@ -24,7 +24,7 @@ namespace MVCLaboratorio.Controllers
 
         public ActionResult CursosDetails(int id)
         {
-            return View();
+            return View(repoCurso.obtenerCurso(id));
         }
 
         //
@@ -58,7 +58,7 @@ namespace MVCLaboratorio.Controllers
  
         public ActionResult CursosEdit(int id)
         {
-            return View();
+            return View(repoCurso.obtenerCurso(id));
         }
 
         //
@@ -84,7 +84,7 @@ namespace MVCLaboratorio.Controllers
  
         public ActionResult CursosDelete(int id)
         {
-            return View();
+            return View(repoCurso.obtenerCurso(id));
         }
 
         //
@@ -95,7 +95,7 @@ namespace MVCLaboratorio.Controllers
         {
             try
             {
-                // TODO: Add delete logic here
+                repoCurso.eliminarCurso(id);
  
                 return RedirectToAction("Index");
             }
