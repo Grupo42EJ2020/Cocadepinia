@@ -55,7 +55,7 @@
 <a href="/Cursos/Index">Videos sobre los temas de los cursos</a>
 
 <br />
-<a href="/Curso_Tema/Index">Datos de los Cursos</a>
+<a href="/Curso_Tema/Index">Datos de los Temas de Cursos</a>
 <br />
 <img src="../../Content/cocapinia.jpeg" />
 </center>
