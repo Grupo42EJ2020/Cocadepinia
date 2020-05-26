@@ -17,6 +17,8 @@
     <br />
 <a href="/Cursos/Index">Datos de los Cursos</a>
 <br />
+<a href="/Cursos/Index">Videos sobre los temas de los cursos</a>
+<br />
 <img src="../../Content/cocapinia.jpeg" />
 </center>
 </body>
