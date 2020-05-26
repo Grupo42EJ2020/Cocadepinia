@@ -18,7 +18,7 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
-        public ActionResult Empleados()
+        public ActionResult EmpleadosVer()
         {
             return View(repoEmpleado.obtenerEmpleado());
         }

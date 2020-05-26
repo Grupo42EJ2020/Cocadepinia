@@ -5,13 +5,46 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Pia Desarrollo de Software</title>
+     <style type="text/css">
+    html, body
+    {
+    width: 100%;
+    height: 110%; 
+    font-family: LCD ; 
+    }
+    a:link, a:visited{
+    text-decoration: none;
+    font-family: LCD ;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+    width:200px;
+    height:25px;
+    text-align:center;
+    display: inline-block;
+    margin: 20px 20px 0 20px;
+    background-color: #000000;
+    }
+    a:hover{
+    color: #4c5557;
+    background-color: #DC143C;
+    text-decoration: none;
+    }           
+    
+    </style>
 </head>
-<body>
+<body background="../../Content/coca.png" />
     <center>
-    <h1>
-    Bienvenidos al pia PIA de Coca De Piña 👍
+
+   
+   <font size=7>Bienvenidos al PIA de Coca de Piña 👍</font> 
+   <h1>
+    MENU
+
     </h1>
-    <p>Menu</p>
     <br />
     
 
@@ -21,6 +54,7 @@
 <br />
 <a href="/Cursos/Index">Videos sobre los temas de los cursos</a>
 
+<br />
 <br />
 <img src="../../Content/cocapinia.jpeg" />
 </center>

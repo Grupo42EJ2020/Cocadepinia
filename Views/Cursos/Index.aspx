@@ -7,35 +7,33 @@
     <title>Index</title>
 </head>
 <body>
-    <table>
+<body background=" ../../Content/cocapinia2.jpg" />
+    
+    <table border="1" align="center" bordercolor="red" cellspacing="0">
+    <caption style="color:White">DATOS</caption>
         <tr>
             <th></th>
-            <th>
-                IdCursos
-            </th>
-            <th>
-                Descripcion
-            </th>
-            <th>
-                IdEmpleado
-            </th>
+            
+            <th width="200" bgcolor="yellow">Id Cursos</th>
+            <th width="200" bgcolor="yellow">Descripción</th>
+            <th width="200" bgcolor="yellow">Id del empleado</th>
         </tr>
 
     <% foreach (var item in Model) { %>
     
         <tr>
-            <td>
-                <%: Html.ActionLink("Edit", "CursosEdit", new { id=item.IdCursos }) %> |
-                <%: Html.ActionLink("Details", "CursosDetails", new { id=item.IdCursos })%> |
-                <%: Html.ActionLink("Delete", "CursosDelete", new {id=item.IdCursos })%>
+            <td height="50" width="150"  bgcolor="yellow">
+                <%: Html.ActionLink("Editar", "CursosEdit", new { id=item.IdCursos }) %> |
+                <%: Html.ActionLink("Detalles", "CursosDetails", new { id=item.IdCursos })%> |
+                <%: Html.ActionLink("Eliminar", "CursosDelete", new {id=item.IdCursos })%>
             </td>
-            <td>
+            <td height="50" width="150"  bgcolor="yellow">
                 <%: item.IdCursos %>
             </td>
-            <td>
+            <td height="50" width="150"  bgcolor="yellow">
                 <%: item.Descripcion %>
             </td>
-            <td>
+            <td height="50" width="150"  bgcolor="yellow">
                 <%: item.IdEmpleado %>
             </td>
         </tr>
@@ -44,8 +42,9 @@
 
     </table>
 
-    <p>
-        <%: Html.ActionLink("Create New", "CursosCreate") %>
+    <p style ="color:#ff6600; front-size: 1.5em">
+
+        <%: Html.ActionLink("Crear Curso", "CursosCreate") %>
     </p>
 
 </body>
