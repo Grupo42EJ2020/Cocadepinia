@@ -8,7 +8,7 @@ using MVCLaboratorio.Utilerias;
 
 namespace MVCLaboratorio.Models
 {
-    public class RepositorioClase_Tema_Video : ICurso_Tema_Video
+    public class RepositorioCurso_Tema_Video : ICurso_Tema_Video
     {
         public List<Curso_Tema_Video> obtenerCurso_Tema_Video()
         {

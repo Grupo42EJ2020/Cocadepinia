@@ -77,7 +77,7 @@
     <Compile Include="Models\Curso_Tema_Video.cs" />
     <Compile Include="Models\ICurso.cs" />
     <Compile Include="Models\ICurso_Tema_Video.cs" />
-    <Compile Include="Models\RepositorioClase_Tema_Video.cs" />
+    <Compile Include="Models\RepositorioCurso_Tema_Video.cs" />
     <Compile Include="Models\RepositorioCursos.cs" />
     <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\IEmpleado.cs" />
@@ -91,6 +91,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Cursos\Index.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Index.aspx" />
     <Content Include="Views\Empleados\EmpleadoCreate.aspx" />
     <Content Include="Views\Empleados\EmpleadoDelete.aspx" />
     <Content Include="Views\Empleados\EmpleadoDetails.aspx" />
