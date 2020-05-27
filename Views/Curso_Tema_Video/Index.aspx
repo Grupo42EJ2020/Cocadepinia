@@ -4,13 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Videos sobre los temas de los Cursos</title>
+    <title>Index</title>
 </head>
 <body>
-    <div>
-    
+    <h1>¡Videos sobre los temas de los Cursos!</h1>
 
+    <a href ="/Curso_Tema_Video/Curso_Tema_Video">Ver Opciones</a>
+    <br />
+     <a href="/Home/Index">Regresar al Menu</a>
 
-    </div>
 </body>
 </html>

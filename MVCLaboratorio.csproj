@@ -101,6 +101,7 @@
     <Content Include="Views\Cursos\CursosDetails.aspx" />
     <Content Include="Views\Cursos\Index.aspx" />
     <Content Include="Views\Curso_Tema\Index.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Curso_Tema_Video.aspx" />
     <Content Include="Views\Curso_Tema_Video\Index.aspx" />
     <Content Include="Views\Empleados\EmpleadoCreate.aspx" />
     <Content Include="Views\Empleados\EmpleadoDelete.aspx" />
