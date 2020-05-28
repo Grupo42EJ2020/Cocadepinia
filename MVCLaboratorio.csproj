@@ -104,7 +104,11 @@
     <Content Include="Views\Cursos\CursosDelete.aspx" />
     <Content Include="Views\Cursos\CursosDetails.aspx" />
     <Content Include="Views\Cursos\Index.aspx" />
+    <Content Include="Views\Curso_Tema\Curso_TemaCreate.aspx" />
+    <Content Include="Views\Curso_Tema\Curso_TemaDelete.aspx" />
+    <Content Include="Views\Curso_Tema\Curso_TemaDetail.aspx" />
     <Content Include="Views\Curso_Tema\Curso_TemaDetails.aspx" />
+    <Content Include="Views\Curso_Tema\Curso_TemaEdit.aspx" />
     <Content Include="Views\Curso_Tema\Index.aspx" />
     <Content Include="Views\Curso_Tema_Video\Curso_Tema_Video.aspx" />
     <Content Include="Views\Curso_Tema_Video\Curso_Tema_VideoDelete.aspx" />
