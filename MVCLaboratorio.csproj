@@ -93,8 +93,12 @@
     <Content Include="Content\coca.png" />
     <Content Include="Content\cocapinia.jpeg" />
     <Content Include="Content\cocapinia2.jpg" />
+    <Content Include="Content\empleadodelete.jpg" />
     <Content Include="Content\Empleados.png" />
+    <Content Include="Content\empleadosdetails.jpg" />
+    <Content Include="Content\empleadosedit.png" />
     <Content Include="Content\empleadover.jpg" />
+    <Content Include="Content\registrar empleado.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Cursos\CursosDelete.aspx" />

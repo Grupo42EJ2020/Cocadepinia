@@ -33,7 +33,7 @@ namespace MVCLaboratorio.Controllers
         {
             repoEmpleado.eliminarEmpleado(id);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("EmpleadosVer");
         }
 
         public ActionResult EmpleadoDetails(int id)
@@ -53,7 +53,7 @@ namespace MVCLaboratorio.Controllers
             datosEmpleado.IdEmpleado = id;
             repoEmpleado.actualizarEmpleado(datosEmpleado);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("EmpleadosVer");
         }
 
         public ActionResult EmpleadoCreate()
@@ -66,7 +66,7 @@ namespace MVCLaboratorio.Controllers
         public ActionResult EmpleadoCreate(Empleado datos)
         {
             repoEmpleado.insertarEmpleado(datos);
-            return RedirectToAction("Index");
+            return RedirectToAction("EmpleadosVer");
         }
     }
 }
