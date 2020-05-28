@@ -19,39 +19,39 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
-        public ActionResult EmpleadosVer(int IdTema)
+        public ActionResult TemaVer()
         {
-            return View(repoTema.obtenerTema(IdTema));
+            return View(repoTema.obtenerTema());
         }
-        public ActionResult TemaDelete(int IdTema)
+        public ActionResult TemaDelete(int id)
         {
 
-            return View(repoTema.obtenerTema(IdTema));
+            return View(repoTema.obtenerTema(id));
         }
 
         [HttpPost]
-        public ActionResult TemaDelete(int IdTema, FormCollection datos)
+        public ActionResult TemaDelete(int id, FormCollection datos)
         {
-            repoTema.eliminarTema(IdTema);
+            repoTema.eliminarTema(id);
 
             return RedirectToAction("Index");
         }
 
-        public ActionResult TemaDetails(int IdTema)
+        public ActionResult TemaDetails(int id)
         {
-            return View(repoTema.obtenerTema(IdTema));
+            return View(repoTema.obtenerTema(id));
         }
 
-        public ActionResult TemaEdit(int IdTema)
+        public ActionResult TemaEdit(int id)
         {
-            return View(repoTema.obtenerTema(IdTema));
+            return View(repoTema.obtenerTema(id));
         }
 
 
         [HttpPost]
-        public ActionResult TemaEdit(int idTema, Tema datosTema)
+        public ActionResult TemaEdit(int id, Tema datosTema)
         {
-            datosTema.IdTema = idTema;
+            datosTema.IdTema = id;
             repoTema.actualizarTema(datosTema);
 
             return RedirectToAction("Index");

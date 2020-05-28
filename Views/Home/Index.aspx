@@ -47,7 +47,8 @@
     </h1>
     <br />
     
-
+    <a href="/Tema/Index">Temas</a>
+    <br />
     <a href="/Empleados/Index">Empleados</a>
     <br />
 <a href="/Cursos/Index">Datos de los Cursos</a>

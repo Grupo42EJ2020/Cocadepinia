@@ -8,8 +8,8 @@
 </head>
 <body>
        <h1>BIENVENIDO TABLA A LA TABLA Tema</h1>
-    <a href ="/Tema/TemaDetails">lista Curso_Tema</a>
+    <a href ="/Tema/TemaVer">Lista de Temas</a>
     <br />
-    <a href="/Home/Index">Regresar a Menu</a>
+    <a href="/Home/Index">Regresar al Menu</a>
 </body>
 </html>

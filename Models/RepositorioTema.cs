@@ -10,7 +10,7 @@ namespace MVCLaboratorio.Models
 {
     public class RepositorioTema : ITema
     {
-        public List<Tema> obtenerTemas()
+        public List<Tema> obtenerTema()
         {
             DataTable dtTema;
             dtTema = BaseHelper.ejecutarConsulta("sp_Tema_ConsultarTodo", CommandType.StoredProcedure);
@@ -22,7 +22,7 @@ namespace MVCLaboratorio.Models
                 Tema TemaAux = new Tema();
                 TemaAux.IdTema = int.Parse(item["IdTema"].ToString());
                 TemaAux.Nombre = item["Nombre"].ToString();
-          
+
                 lstTema.Add(TemaAux);
             }
 
