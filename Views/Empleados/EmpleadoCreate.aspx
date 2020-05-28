@@ -78,7 +78,11 @@
     <% } %>
 
     <div>
+<<<<<<< HEAD
         <%: Html.ActionLink("Regresar a lista", "EmpleadosVer") %>
+=======
+        <%: Html.ActionLink("Regresar a la lista", "TemaVer") %>
+>>>>>>> 307becf304c59a187a20a30fedf8024d5b5ebd4f
     </div>
     <img src="../../Content/registrar%20empleado.jpg" />
     </center>

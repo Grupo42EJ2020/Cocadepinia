@@ -71,6 +71,7 @@
     <Compile Include="Controllers\Curso_Tema_VideoController.cs" />
     <Compile Include="Controllers\EmpleadosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TemaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -80,12 +81,15 @@
     <Compile Include="Models\ICurso.cs" />
     <Compile Include="Models\ICurso_Tema.cs" />
     <Compile Include="Models\ICurso_Tema_Video.cs" />
+    <Compile Include="Models\ITema.cs" />
     <Compile Include="Models\RepositorioCurso_Tema.cs" />
     <Compile Include="Models\RepositorioCurso_Tema_Video.cs" />
     <Compile Include="Models\RepositorioCursos.cs" />
     <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\IEmpleado.cs" />
     <Compile Include="Models\RepositorioEmpleado.cs" />
+    <Compile Include="Models\RepositorioTema.cs" />
+    <Compile Include="Models\Tema.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilerias\BaseHelper.cs" />
   </ItemGroup>
@@ -104,8 +108,17 @@
     <Content Include="Views\Cursos\CursosDelete.aspx" />
     <Content Include="Views\Cursos\CursosDetails.aspx" />
     <Content Include="Views\Cursos\Index.aspx" />
+    <Content Include="Views\Curso_Tema\Curso_TemaCreate.aspx" />
+    <Content Include="Views\Curso_Tema\Curso_TemaDelete.aspx" />
+    <Content Include="Views\Curso_Tema\Curso_TemaDetail.aspx" />
+    <Content Include="Views\Curso_Tema\Curso_TemaDetails.aspx" />
+    <Content Include="Views\Curso_Tema\Curso_TemaEdit.aspx" />
     <Content Include="Views\Curso_Tema\Index.aspx" />
     <Content Include="Views\Curso_Tema_Video\Curso_Tema_Video.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Curso_Tema_VideoCreate.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Curso_Tema_VideoDelete.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Curso_Tema_VideoDetails.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Curso_Tema_VideoEdit.aspx" />
     <Content Include="Views\Curso_Tema_Video\Index.aspx" />
     <Content Include="Views\Empleados\EmpleadoCreate.aspx" />
     <Content Include="Views\Empleados\EmpleadoDelete.aspx" />
@@ -114,6 +127,12 @@
     <Content Include="Views\Empleados\EmpleadosVer.aspx" />
     <Content Include="Views\Empleados\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Tema\Index.aspx" />
+    <Content Include="Views\Tema\TemaCreate.aspx" />
+    <Content Include="Views\Tema\TemaDelete.aspx" />
+    <Content Include="Views\Tema\TemaDetails.aspx" />
+    <Content Include="Views\Tema\TemaEdit.aspx" />
+    <Content Include="Views\Tema\TemaVer.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -153,7 +172,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>55452</DevelopmentServerPort>
+          <DevelopmentServerPort>58268</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

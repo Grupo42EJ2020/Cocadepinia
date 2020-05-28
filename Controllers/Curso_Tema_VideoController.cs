@@ -18,14 +18,17 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+
         public ActionResult Curso_Tema_Video()
         {
             return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video());
         }
+
         public ActionResult Curso_Tema_VideoDelete(int id)
         {
             return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video(id));
         }
+
         [HttpPost]
         public ActionResult Curso_Tema_VideoDelete(int id, FormCollection datos)
         {
@@ -38,6 +41,7 @@ namespace MVCLaboratorio.Controllers
         {
             return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video(id));
         }
+        
         public ActionResult Curso_Tema_VideoEdit(int id)
         {
             return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video(id));
@@ -56,6 +60,7 @@ namespace MVCLaboratorio.Controllers
 
             return View();
         }
+
 
         [HttpPost]
         public ActionResult Curso_Tema_VideoCreate(Curso_Tema_Video datos)
