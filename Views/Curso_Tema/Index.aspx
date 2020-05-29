@@ -7,7 +7,7 @@
     <title>Index</title>
 </head>
 <body>
-       <h1>BIENVENIDO TABLA Curso_Tema</h1>
+       <h1>BIENVENIDO A LA SECCION Curso_Tema</h1>
     <a href ="/Curso_Tema/Curso_TemaDetails">lista Curso_Tema</a>
     <br />
     <a href="/Home/Index">Regresar a Menu</a>

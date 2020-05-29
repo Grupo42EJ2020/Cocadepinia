@@ -20,7 +20,7 @@
     padding-right: 10px;
     font-weight: 100;
     font-size: 15px;
-    color: white;
+    color: White;
     width:200px;
     height:25px;
     text-align:center;
@@ -58,6 +58,11 @@
 <br />
 <a href="/Curso_Tema/Index">Datos de los Temas de Cursos</a>
 <br />
+
+<a href="/Video/Index">VIDEO</a>
+        <br />
+
+
 <img src="../../Content/cocapinia.jpeg" />
 </center>
 </body>

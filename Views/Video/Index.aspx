@@ -4,12 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Index</title>
+    <title>Video Cursos</title>
 </head>
 <body>
-       <h1>BIENVENIDO  A LA SECCION DE TEMAS</h1>
-    <a href ="/Tema/TemaVer">Lista de Temas</a>
-    <br />
-    <a href="/Home/Index">Regresar al Menu</a>
+    <h1>BIENVENIDO A LA SECCION DE VIDEOS</h1>
+    <a href="/Video/VideosVer">Lista De Videos</a>
+
+    <a href="/Home/Index">Regresar al menu</a>
+    <br />                                                
+    <img src="../../Content/SHERK.jpg" />
 </body>
 </html>

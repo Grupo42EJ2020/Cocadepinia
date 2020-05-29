@@ -68,5 +68,6 @@ namespace MVCLaboratorio.Controllers
             repoEmpleado.insertarEmpleado(datos);
             return RedirectToAction("EmpleadosVer");
         }
+
     }
 }
