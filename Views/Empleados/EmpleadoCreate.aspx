@@ -73,8 +73,6 @@
 
         <%: Html.ActionLink("Regresar a lista", "EmpleadosVer") %>
 
-        <%: Html.ActionLink("Regresar a la lista", "TemaVer") %>
-
     </div>
     <img src="../../Content/registrar%20empleado.jpg" />
     </center>
