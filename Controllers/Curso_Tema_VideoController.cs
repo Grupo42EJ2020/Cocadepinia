@@ -41,6 +41,7 @@ namespace MVCLaboratorio.Controllers
         {
             return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video(id));
         }
+        
         public ActionResult Curso_Tema_VideoEdit(int id)
         {
             return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video(id));

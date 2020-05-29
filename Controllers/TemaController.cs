@@ -34,7 +34,7 @@ namespace MVCLaboratorio.Controllers
         {
             repoTema.eliminarTema(id);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("TemaVer");
         }
 
         public ActionResult TemaDetails(int id)
@@ -54,7 +54,7 @@ namespace MVCLaboratorio.Controllers
             datosTema.IdTema = id;
             repoTema.actualizarTema(datosTema);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("TemaVer");
         }
 
         public ActionResult TemaCreate()
@@ -67,7 +67,7 @@ namespace MVCLaboratorio.Controllers
         public ActionResult TemaCreate(Tema datos)
         {
             repoTema.insertarTema(datos);
-            return RedirectToAction("Index");
+            return RedirectToAction("TemaVer");
         }
     }
 }
