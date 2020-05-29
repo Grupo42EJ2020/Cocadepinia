@@ -21,12 +21,13 @@ namespace MVCLaboratorio.Models
             {
                 Curso_Tema_Video Curso_Tema_VideoA = new Curso_Tema_Video();
                 Curso_Tema_VideoA.IdCTV = int.Parse(item["IdCTV"].ToString());
-                Curso_Tema_VideoA.IdCT = item["IdCT"].ToString();
-                Curso_Tema_VideoA.IdVideo = item["IdVideo"].ToString();
+                Curso_Tema_VideoA.IdCT = int.Parse(item["IdCT"].ToString());
+                Curso_Tema_VideoA.IdVideo = int.Parse(item["IdVideo"].ToString());
                 lstCurso_Tema_Video.Add(Curso_Tema_VideoA);
             }
 
             return lstCurso_Tema_Video;
+
         }
     
         public Curso_Tema_Video obtenerCurso_Tema_Video(int IdCTV)
@@ -42,24 +43,25 @@ namespace MVCLaboratorio.Models
             if (dtCurso_Tema_Video.Rows.Count > 0)
             {
                 datosCurso_Tema_Video.IdCTV = int.Parse(dtCurso_Tema_Video.Rows[0]["IdCTV"].ToString());
-                datosCurso_Tema_Video.IdCT = dtCurso_Tema_Video.Rows[0]["IdCT"].ToString();
-                datosCurso_Tema_Video.IdVideo = dtCurso_Tema_Video.Rows[0]["IdVideo"].ToString();
+                datosCurso_Tema_Video.IdCT = int.Parse(dtCurso_Tema_Video.Rows[0]["IdCT"].ToString());
+                datosCurso_Tema_Video.IdVideo = int.Parse(dtCurso_Tema_Video.Rows[0]["IdVideo"].ToString());
 
                 return datosCurso_Tema_Video;
             }
             else
             {
                 return null;
+
             }
         }
 
         public void insertarCurso_Tema_Video(Curso_Tema_Video datosCurso_Tema_Video)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdCTV", datosCurso_Tema_Video.IdCTV));
             parametros.Add(new SqlParameter("@IdCT", datosCurso_Tema_Video.IdCT));
+            parametros.Add(new SqlParameter("@IdVideo", datosCurso_Tema_Video.IdVideo));
+            BaseHelper.ejecutarSentencia("sp_Curso_Tema_Video_Insertar", CommandType.StoredProcedure, parametros);
 
-            BaseHelper.ejecutarConsulta("sp_Curso_Tema_Video_Insertar", CommandType.StoredProcedure, parametros);
         }
         
 
@@ -69,6 +71,7 @@ namespace MVCLaboratorio.Models
             parametros.Add(new SqlParameter("@IdCTV", IdCTV));
 
             BaseHelper.ejecutarSentencia("sp_Curso_Tema_Video_Eliminar", CommandType.StoredProcedure, parametros);
+
         }
 
         public void actualizarCurso_Tema_Video(Curso_Tema_Video datosCurso_Tema_Video)
@@ -78,7 +81,8 @@ namespace MVCLaboratorio.Models
             parametros.Add(new SqlParameter("@IdCT", datosCurso_Tema_Video.IdCT));
             parametros.Add(new SqlParameter("@IdVideo", datosCurso_Tema_Video.IdVideo));
 
-            BaseHelper.ejecutarConsulta("sp_Curso_Tema_Video_Actualizar", CommandType.StoredProcedure, parametros);
+            BaseHelper.ejecutarSentencia("sp_Curso_Tema_Video_Actualizar", CommandType.StoredProcedure, parametros);
+
         }
     }
 }

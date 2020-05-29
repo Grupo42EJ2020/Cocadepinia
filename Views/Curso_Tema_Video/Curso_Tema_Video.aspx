@@ -47,7 +47,7 @@
     <p>
         <%: Html.ActionLink("Agregar", "Curso_Tema_VideoCreate") %>
     </p>
-
+    <a href="/Curso_Tema_Video/Index">Regresar</a>
 </body>
 </html>
 
