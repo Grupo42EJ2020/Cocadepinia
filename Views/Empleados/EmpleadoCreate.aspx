@@ -47,14 +47,6 @@
             <legend>Fields</legend>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.IdEmpleado) %>
-            </div>
-            <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.IdEmpleado) %>
-                <%: Html.ValidationMessageFor(model => model.IdEmpleado) %>
-            </div>
-            
-            <div class="editor-label">
                 <%: Html.LabelFor(model => model.Nombre) %>
             </div>
             <div class="editor-field">
