@@ -38,6 +38,7 @@
     </style>
 </head>
 <body background="../../Content/empleadodelete.jpg" />
+<img src="../../Content/mensaje.png" />
 <center>
     <h3>¿Esta seguro de eliminar la siguiente información?</h3>
     <fieldset>
