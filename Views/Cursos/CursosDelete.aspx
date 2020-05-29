@@ -6,10 +6,10 @@
 <head runat="server">
     <title>CursosDelete</title>
 </head>
-<body>
-<center>
+<body background="../../Content/coca.png" />
+
     <h3>Seguro de eliminar esta información?</h3>
-    <center />
+    
     <fieldset>
         <legend>Fields</legend>
         

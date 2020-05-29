@@ -39,11 +39,11 @@ namespace MVCLaboratorio.Controllers
         // POST: /Cursos/Create
 
         [HttpPost]
-        public ActionResult CursosCreate(FormCollection collection)
+        public ActionResult CursosCreate(Cursos datos)
         {
             try
             {
-                // TODO: Add insert logic here
+                repoCurso.insertarCurso(datos);
 
                 return RedirectToAction("Index");
             }
@@ -58,6 +58,7 @@ namespace MVCLaboratorio.Controllers
  
         public ActionResult CursosEdit(int id)
         {
+            
             return View(repoCurso.obtenerCurso(id));
         }
 
@@ -65,11 +66,12 @@ namespace MVCLaboratorio.Controllers
         // POST: /Cursos/Edit/5
 
         [HttpPost]
-        public ActionResult CursosEdit(int id, FormCollection collection)
+        public ActionResult CursosEdit(int id, Cursos datosCursos)
         {
             try
             {
-                // TODO: Add update logic here
+                datosCursos.IdCursos = id;
+                repoCurso.actualizarCurso(datosCursos);
  
                 return RedirectToAction("Index");
             }
