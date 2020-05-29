@@ -58,7 +58,7 @@ namespace MVCLaboratorio.Models
             parametros.Add(new SqlParameter("@Descripcion", datosCursos.Descripcion));
             parametros.Add(new SqlParameter("@IdEmpleado", datosCursos.IdEmpleado));
 
-            BaseHelper.ejecutarConsulta("sp_Empleado_Insertar", CommandType.StoredProcedure, parametros);
+            BaseHelper.ejecutarConsulta("sp_InsertarCurso", CommandType.StoredProcedure, parametros);
         }
 
         public void eliminarCurso(int IdCurso)
@@ -78,7 +78,7 @@ namespace MVCLaboratorio.Models
             parametros.Add(new SqlParameter("@Descripcion", datosCursos.Descripcion));
             parametros.Add(new SqlParameter("@IdEmpleado", datosCursos.IdEmpleado));
 
-            BaseHelper.ejecutarConsulta("sp_Empleado_Actualizar", CommandType.StoredProcedure, parametros);
+            BaseHelper.ejecutarConsulta("sp_ActualizarCurso", CommandType.StoredProcedure, parametros);
 
         } 
 

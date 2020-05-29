@@ -101,8 +101,10 @@
     <Content Include="Content\empleadover.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Views\Cursos\CursosCreate.aspx" />
     <Content Include="Views\Cursos\CursosDelete.aspx" />
     <Content Include="Views\Cursos\CursosDetails.aspx" />
+    <Content Include="Views\Cursos\CursosEdit.aspx" />
     <Content Include="Views\Cursos\Index.aspx" />
     <Content Include="Views\Curso_Tema\Curso_TemaCreate.aspx" />
     <Content Include="Views\Curso_Tema\Curso_TemaDelete.aspx" />

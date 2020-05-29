@@ -6,7 +6,8 @@
 <head runat="server">
     <title>CursosDetails</title>
 </head>
-<body>
+<body background="../../Content/coca.png" />
+    
 <fieldset>
     
         <legend>Datos</legend>

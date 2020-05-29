@@ -10,7 +10,7 @@
 <body background=" ../../Content/cocapinia2.jpg" />
     
     <table border="1" align="center" bordercolor="red" cellspacing="0">
-    <caption style="color:White">DATOS</caption>
+    <caption style="color:red">DATOS</caption>
         <tr>
             <th></th>
             
@@ -42,11 +42,15 @@
 
     </table>
 
-    <p style ="color:#ff6600; front-size: 1.5em">
-
-        <%: Html.ActionLink("Crear Curso", "CursosCreate") %>
+    <table border="1" align="center" bordercolor="red" cellspacing="0">
+    <td height="50" width="150"  bgcolor="yellow">
+    <p>
+<%: Html.ActionLink("Crear Curso", "CursosCreate") %>
+<br />
+<a href="/Home/index">Regresar al menú</a>
     </p>
-
+</td>
+</table>
 </body>
 </html>
 
